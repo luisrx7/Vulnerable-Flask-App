@@ -6,7 +6,7 @@ import sqlite3
 
 
 app = Flask(__name__)
-app.config['UPLOAD_FOLDER']="/home/kali/Desktop/upload"
+app.config['UPLOAD_FOLDER']="/tmp"
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1000 * 1000
 
 @app.route("/")
@@ -215,7 +215,7 @@ def uploadfile():
       <form  method = "POST"  enctype = "multipart/form-data">
          <input type = "file" name = "file" />
          <input type = "submit"/>
-      </form>   
+      </form>
    </body>
 </html>
 

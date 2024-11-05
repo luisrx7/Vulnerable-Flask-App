@@ -34,7 +34,7 @@ Vulnerabilities
 
 ### Requirements
 
-To run the application, you will need to have Python 3 installed on your machine. 
+To run the application, you will need to have Python 3 installed on your machine.
 
 ## Usage
 
@@ -53,6 +53,18 @@ git clone https://github.com/videvelopers/Vulnerable-Flask-App.git
 2. Navigate to the cloned directory.
 cd Vulnerable-Flask-App
 3. Run the Flask application.
+
+### Docker
+
+1. Clone this repository to your local machine.
+git clone <https://github.com/videvelopers/Vulnerable-Flask-App.git>
+2. Navigate to the cloned directory.
+cd Vulnerable-Flask-App
+3. Build the Docker image.
+docker build -t vulnerable-flask-app .
+4. Run the Docker container.
+docker run -p 8081:8081 -p 8001:8001 vulnerable-flask-app
+
 
 # Disclaimer
 
