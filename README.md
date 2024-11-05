@@ -54,6 +54,17 @@ git clone https://github.com/videvelopers/Vulnerable-Flask-App.git
 cd Vulnerable-Flask-App
 3. Run the Flask application.
 
+### Docker
+
+1. Clone this repository to your local machine.
+git clone https://github.com/videvelopers/Vulnerable-Flask-App.git
+2. Navigate to the cloned directory.
+cd Vulnerable-Flask-App
+3. Build the Docker image.
+docker build -t vulnerable-flask-app .
+4. Run the Docker container.
+docker run -p 8081:8081 vulnerable-flask-app
+
 # Disclaimer
 
 **This application is for educational purposes only. Use it at your own risk. The author is not responsible for any damage caused by this application. Do not run this application on a production server.**
@@ -65,5 +76,3 @@ cd Vulnerable-Flask-App
 [ salman@videvelopers.com](salman@videvelopers.com)
 
 [blog](st-tlc.blogspot.com)
-
-
